@@ -1,4 +1,4 @@
-### sample program 
+### SAMPLE PROGRAM 
 
     from fastapi import FastAPI
     
