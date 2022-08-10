@@ -77,8 +77,8 @@
     
     app = FastAPI()
     
-    @app.put("/student-detail/{student_id}")
-    async def student(student_id: int, student_detail: StudentDetail, clg: str):
+    @app.put("/student-detail/{student_id}")    #path
+    async def student(student_id: int, student_detail: StudentDetail, clg: str): #query
         student_data = student_detail.dict()
         if clg:
             student_data.update({"college": clg})
