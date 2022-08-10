@@ -1,4 +1,17 @@
 # QUERY PARAMETER and STRING VALIDATION
+Generic validations and metadata:
+
++ alias
++ title
++ description
++ deprecated
+
+Validations specific for strings:
++ min_length
++ max_length
++ regex
+
+##### _EG_
 
     from fastapi import FastAPI, Query
     from pydantic import Required
